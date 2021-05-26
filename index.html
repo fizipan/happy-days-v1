@@ -430,7 +430,11 @@
     <!-- END: Footer -->
 
     <!-- Audio -->
-    <audio src="dist/audio/wedding-audio.mp3" autoplay loop class="hidden"></audio>
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    
+    <audio id="song" autoplay loop class="hidden">
+      <source src="dist/audio/wedding-audio.mp3"  type="audio/mp3">
+    </audio>
     <!-- <button id="button" class="text-gray-300 absolute top-1/2 left-1/2 transform translate-x-1/2 translate-y-1/2 cursor-pointer outline-none w-12 p-4" style="background: rgba(115, 67, 167, 0.8); box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">
       <i class="fas fa-volume-up"></i>
     </button> -->
