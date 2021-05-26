@@ -483,6 +483,11 @@
         });
     </script>
     <script>
+      $(document).ready(function() {
+        $('audio').play();
+      });
+    </script>
+    <script>
       const destTime = new Date('June, 9 2021 20:22:15').getTime();
       const time = setInterval(() => {
         const nowTime = new Date().getTime();
@@ -513,13 +518,6 @@
         }
 
       }, 1000);
-    </script>
-    <script>
-      window.addEventListener("DOMContentLoaded", event => {
-        const audio = document.querySelector("audio");
-        audio.volume = 0.2;
-        audio.play();
-      });
     </script>
   </body>
 </html>
