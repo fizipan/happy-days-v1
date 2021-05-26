@@ -1,10 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./dist/**/*.html', './dist/**/*.js'],
-  },
+  purge: ['./dist/**/*.html', './dist/**/*.js'],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -237,7 +234,9 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      dancing: ['Dancing Script', 'sans-serif'],
       sans: [
+        'Playfair Display',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
